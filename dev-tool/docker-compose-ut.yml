@@ -1,0 +1,8 @@
+postgres_db:
+  image: postgres:latest
+  container_name: postgres_db
+  ports:
+      - "5432:5432"
+  environment:
+    POSTGRES_DB: testdb
+    POSTGRES_PASSWORD: testdb
